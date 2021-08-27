@@ -1,4 +1,5 @@
 # This is a program to store new vehicle inventory and assist with monthly payments
+#
 # Create variable of your favorite car brand
 company = 'Ford'
 # Create list of 5 of their models from cheapest to most expensive
@@ -34,6 +35,7 @@ banner = "Audrey's Ford Dealership"
 print(message)
 print(banner)
 # Using title methods, print the number vehicles in alphabetical order, with the year and available colors.
+
 models.sort()
 print(f"In the {year} {models[0]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
 print(f"In the {year} {models[1]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
