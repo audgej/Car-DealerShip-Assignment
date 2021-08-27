@@ -1,0 +1,65 @@
+# This is a program to store new vehicle inventory and assist with monthly payments
+# Create variable of your favorite car brand
+company = 'Ford'
+# Create list of 5 of their models from cheapest to most expensive
+models = ['fusion', 'ranger', 'escape', 'mustang','f150']
+# Append a 6th model to the list
+models.append('f250')
+# Create list of 5 standard colors for all models
+colors = ['red','white','black','silver','blue']
+# Replace your last color with a different color
+colors.insert(4,'green')
+# Create variable of the current new year models
+year = '2022'
+# Create MSRP constant number (not string) of each of the models
+mustang_msrp = 40000
+fusion_msrp = 20000
+ranger_msrp = 30000
+escape_msrp = 35000
+f150_msrp = 45000
+f250_msrp = 50000
+# Create a constant number (not string) for total months in 4yr, 5yr, and 6yr loans
+four_yr = 48
+five_yr = 60
+six_yr = 72
+# Create a variable for the guest's name. Be courteous in your upcoming messages :)
+guest = 'Sam'
+# Create message variable (with f-string) welcoming customer to your new car store and an overview of brand and year inventory
+message = f'Welcome, {guest} to our dealership! We have many of the brand new 2022 Ford Models'
+
+# Create awesome banner with your brand/name/dealership, however you want to welcome customers
+banner = "Audrey's Ford Dealership"
+
+# Print awesome banner and welcome message
+print(message)
+print(banner)
+# Using title methods, print the number vehicles in alphabetical order, with the year and available colors.
+models.sort()
+print(f"In the {year} {models[0]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+print(f"In the {year} {models[1]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+print(f"In the {year} {models[2]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+print(f"In the {year} {models[3]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+print(f"In the {year} {models[4]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+print(f"In the {year} {models[5]} we have the following colors available:{colors[0]},{colors[1]},{colors[2]},{colors[3]},{colors[4]},{colors[5]}")
+# Create a variable that calculates a monthly payment (no interest) for 5yr/60months for the first vehicle# and print that in a nice, kind message. Don't be rude/pushy to the customer :)
+#fiveyrmonthlyX1_payment = 583
+FiveYrMP = (escape_msrp/five_yr)
+print(f"Your five year monthly payment if you choose the Escape will be {FiveYrMP}")
+# Do the same thing, but give them 4yr and 6yr options for the same vehicle
+FourYrMP = (escape_msrp/four_yr)
+SixYrMP = (escape_msrp/six_yr)
+print(f"Your four year monthly payment if you choose the Escape will be {FourYrMP}")
+print(f"Your six year monthly payment if you choose the Escape will be {SixYrMP}")
+
+# Lastly, give them a 5yr option for each of the other vehicles, just to see if they are interested
+MustangFYP = (mustang_msrp/five_yr)
+FusionFYP = (fusion_msrp/five_yr)
+RangerFYP = (ranger_msrp/five_yr)
+f150FYP = (f150_msrp/five_yr)
+f250FYP = (f250_msrp/five_yr)
+print("Below are the five year plans for all 5 of our models:")
+print(f"Your five year monthly payment if you choose the Mustang will be {MustangFYP}")
+print(f"Your five year monthly payment if you choose the Fusion will be {FusionFYP}")
+print(f"Your five year monthly payment if you choose the Ranger will be {RangerFYP}")
+print(f"Your five year monthly payment if you choose the f150 will be {f150FYP}")
+print(f"Your five year monthly payment if you choose the f250 will be {f250FYP}")
